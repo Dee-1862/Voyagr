@@ -43,7 +43,7 @@ const NavigationScreen = ({ route, navigation }) => {
   const checkLocation = async () => {
     setCheckingLocation(true);
     try {
-      const response = await axios.post('http://192.168.0.170:5000/check_user_location', {
+      const response = await axios.post('localhost:5000/check_user_location', {
         target_lat: nextDestination.lat,
         target_lon: nextDestination.lng,
         tolerance: 0.01
