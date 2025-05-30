@@ -57,7 +57,7 @@ const TripPreferencesScreen = ({ navigation: propNavigation }) => {
   // Sends request to backend to compute new routes
   const sendPostRequest = async (parameters) => {
     try {
-      const response = await axios.post('http://192.168.0.170:5000/optimize_route', parameters, { timeout: 60000 });
+      const response = await axios.post('localhost:5000/optimize_route', parameters, { timeout: 60000 });
       if (response?.data?.routes) {
         return { routes: response.data.routes };
       }
