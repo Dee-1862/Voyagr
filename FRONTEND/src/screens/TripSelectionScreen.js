@@ -1,4 +1,4 @@
-// Corrected
+
 import React, { useEffect, useState } from 'react';
 import { View, StyleSheet, ActivityIndicator, FlatList, SafeAreaView, Text } from 'react-native';
 import { useTheme, Card, Button } from 'react-native-paper';
